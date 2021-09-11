@@ -39,7 +39,6 @@ async function on_idle(context) {
           });
         }, 60000);
       }
-
     }
   }
 }
@@ -81,20 +80,6 @@ async function on_listening(context) {
     }
   }
 }
-
-//  if(timer === null){
-//  timer = setInterval(()=>{
-//    groupMap.forEach((value,key)=>{
-//      console.log(value);
-//      let check = await get_group_order(value, false);
-//      if(check === null){
-//        console.log("Undefined cartid");
-//        groupMap.delete(key);
-//      }
-//    });
-//  }, 2000);
-//}
-
 
 module.exports = async function App(context) {
   // await context.sendText('Welcome to Bottender');
